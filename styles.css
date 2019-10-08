@@ -1,0 +1,39 @@
+h1{
+    color: blue;
+}
+body {
+    background-color: #C6586A;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    background-attachment: fixed;
+    float: center;
+  }
+article {
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  footer {
+      background-color: #444444
+  }
+
+  li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+  }
+  aside{
+      float: left; 
+  }
+  li a:hover {
+    background-color: #111111;
+  }
