@@ -1,71 +1,123 @@
+*{ box-sizing:border-box}
 body {
   background-color: #fdf7e7;
   background-repeat: no-repeat;
   margin:0;
+  display: grid;
   background-attachment: fixed;
+  grid-template-areas: 
+		"header"
+		"main"
+    "footer";
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  font-family: 'Play', sans-serif;
 }
-article {
 
+main {
+  
+	grid-area: main;
+	justify-content: space-around	;
+	display: flex;
+	padding: 10px;
+  margin: 0;
+  text-align: center;
 }
-#naviBar #glowna {
+ .naviBar .glowna {
   background-color: #505580;
   color: #ffffff;
 
 }
-#naviBar {
+ .naviBar {
+  grid-area: header;
   overflow: hidden;
   background-color: #333333;
 }
-#naviBar a {
+ .naviBar a {
   color: #ffffff;
   padding: 16px;
   text-align: center;
   text-decoration: none;
   float: left;
+  font-family: 'Abel', sans-serif;
+
 }
-#naviBar a:hover {
+.naviBar a:hover {
   background-color: #111111;
 }
-#contact {
-  list-style-type: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+footer .contact {
+  margin: 20;
+  padding: 20;
 }
-header {
-  position: relative;
-  text-align: center;
-  font-family: 'Abel', sans-serif;
-  font-size: 32px;
-}
-#face {
-  float:right;  
-   /* vertical-align: middle; */
-   margin: 100px;
-}
-#info {
-  position: relative;
-  list-style-type: none;
-  text-align: left;
-}
-#Lista li{
-  list-style-type: none;
-  margin: 10px;
-;}
+
+
+
 
 footer {
+  grid-area: footer;
   background-color: #333333;
   color: #ffffff;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  left:0;
-  bottom: 0;
   width: 100%;
-  height: 50px; 
-  text-align: center;          /* Footer height */
+  text-align: left;          /* Footer height */
 }
 footer a {
   text-decoration: none;
   color: #ffffff;
+}
+
+
+main section h1 {
+  font-family: 'Play', sans-serif;
+	font-size: 2em;
+	font-weight: 500;
+}
+
+main section .content {
+  max-width: 500px;
+
+  font-family: 'Play', sans-serif;
+  text-align: justify;
+	font-weight: 300;
+	font-size: 1.3em;
+	margin: 3%;
+  color: #333333;
+  /* padding-right: 10cm; */
+
+}
+
+
+main section #face {
+	text-align: center
+}
+
+main section .line {
+	display: block;
+	margin-top: 5%;
+	border-bottom:  double #333333;
+}
+
+main section blockquote {
+	font-size: 1.1em;
+	color: #333333;
+}
+
+main section blockquote p {
+	text-align: right;
+} 
+/* projects.css */
+main .projekty {
+  list-style: none;
+}
+
+main .projekty a{
+  list-style-type: none;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+}
+main .projekty .logo {
+
 }
