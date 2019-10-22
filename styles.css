@@ -92,7 +92,7 @@ main  .line {
 	display: block;
   margin-top: 15px;
   margin-bottom: 15px;
-	border-bottom:  double #ffffff;
+	border-bottom:  double #f5a3a3;
 }
 
 main section blockquote {
@@ -125,7 +125,18 @@ main section blockquote p {
   padding-bottom: 80px; */
 }
 
-.projects .tytul{
+.interests {
+  text-align: left;
+	justify-content: space-around	;
+  display: flex;
+  flex-flow: column wrap;
+	padding: 10px;
+  margin: 5px;
+  padding-bottom: 150px;
+  padding-right: 100px;
+}
+
+ .tytul{
   padding: 10px;
   text-decoration: none;
   font-family: 'Play', sans-serif;
@@ -135,7 +146,7 @@ main section blockquote p {
 .projects a{
   text-decoration: none;
 }
-.projects .logo {
+ .logo {
   height: 200px;
   width: 200px;
   float: left;
@@ -163,7 +174,17 @@ main section blockquote p {
   color: #333333;
   
 }
-.projects .flex {
+.hobb {
+  max-width: 700px;
+ font-family: 'Play', sans-serif;
+ text-align: justify;
+ font-size: 30px;
+ margin: 3%;
+ padding: 10px;
+ color: #333333;
+ 
+}
+ .flex {
   display: flex;
   animation-direction: row;
   justify-content: space-between;
@@ -228,7 +249,11 @@ main section blockquote p {
 	header nav ul {
 		flex-direction: column;
   }
-  main .flex{
+   .flex{
+    font-size:10px ; 
     flex-direction: column;
+  }
+  .hobb{
+    font-size:14px ; 
   }
 } 
