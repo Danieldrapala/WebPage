@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <link rel="stylesheet"  href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset= utf-8>        
@@ -9,17 +10,58 @@
     
 </head>
 <body> 
-        
       <header>
-        <nav class="naviBar">
-          <a href="index.html ">Strona Główna</a>
-          <a href="projects.html"> Wróć do projektów</a>
-          <a href="project3.html">  Następny Projekt</a>
-          <a href="project1.html">  Poprzedni Projekt</a>
-        </nav>
+          <nav class="naviBar" id="nav">
+              <a  href="index.html ">Home</a>
+              <div id="links">  
+                  <a href="projects.html"> Wróć do projektów</a>
+                  <a href="project3.html">  Następny Projekt</a>
+                  <a href="project1.html">  Poprzedni Projekt</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick= "myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
       </header>
-      <main>
-        
+      <main class="projects">
+          <article class="flex">
+              <a class="tytul" href="https://github.com/Mateo1248/Chinese-checkers" target="_blank"><h2> Gra Chinese Chekers</h2></a>
+              <img class="logo" src="pictures/chinese.webp" alt="chinese checkers board">
+              
+          </article>
+              <p class="project">
+                Projekt realizowany na uczelnie. Chinese Checkers to gra bardzo fajna. Jest grana przez ludzi z Chin(stąd nazwa), dlatego razem z kolegą postanowiliśmy ją stworzyć
+              </p>
+      
+              
+                <br>
+              <p class="project">
+                  Ponizej znajduje sie jedna funkcja  z kodu ktory pokazuje mozliwe ruchy dla przycisnietego pionka.
+              </p>
+              
+              <div class="sourceCode">
+                <pre>
+    public void showPossbileMoves(Field selected2) {
+      if (!selected2.getColor().equals("WHITE")) {
+        int ySelected = selected2.getYCord();
+        int xSelected = selected2.getXCord();
+                        
+        if (ySelected % 2 == 1) {
+          highlightField(this.getNode(ySelected - 1, xSelected - 1));
+          highlightField(this.getNode(ySelected + 1, xSelected - 1));
+        } else {
+          highlightField(this.getNode(ySelected - 1, xSelected + 1));
+          highlightField(this.getNode(ySelected + 1, xSelected + 1));
+        }
+        highlightField(this.getNode(ySelected - 1, xSelected));
+        highlightField(this.getNode(ySelected + 1, xSelected));
+        highlightField(this.getNode(ySelected, xSelected - 1));
+        highlightField(this.getNode(ySelected, xSelected + 1));
+        findAHop(selected2);		
+  }
+}
+                </pre>
+              </div>			
       </main>
     <footer>
         <p class="contact">
@@ -28,7 +70,17 @@
             E-mail: danieldr1212(at)gmail.com 
             Github: <a href="https://github.com/Danieldrapala"title="https://github.com/Danieldrapala"hreflang="pl">Danieldrapala</a>
         </p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Poprawny CSS!" />
+                </a>
+            </p>
+                  
     </footer>
+    <script type= "text/javascript" src=script.js></script>
+
 </body>
 
 

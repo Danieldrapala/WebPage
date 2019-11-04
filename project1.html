@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <link rel="stylesheet"  href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset= utf-8>        
@@ -9,16 +10,47 @@
     
 </head>
 <body> 
-        
-      <header>
-        <nav class="naviBar">
-          <a href="index.html ">Strona Główna</a>
-          <a href="projects.html"> Wróć do projektów</a>
-          <a href="project2.html">  Następny Projekt</a>
+    <header>
+        <nav class="naviBar" id="nav">
+            <a  href="index.html ">Home</a>
+            <div id="links">  
+              <a href="projects.html"> Wróć do projektów</a>
+              <a href="project2.html">  Następny Projekt</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick= "myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
-      </header>
-      <main>
-        
+    </header>
+      <main class="projects">
+          <article class="flex">
+          <a class="tytul" href="https://github.com/Danieldrapala/ProjectBd" ><h2>Baza danych szkoły językowej</h2></a>
+          <img class="logo" src="pictures/fxml.jpg" alt="Simple Graphic Editor Main Window">
+          </article>
+              <p class="project">Projekt realizowany, aby stworzyć mniej więcej praktyczną bazę danych samemu, która opakowana została w Gujca i wszystko wytrzepane w fxmlku. </p>
+              <p class="project">
+                  Ponizej kawałek kodu MySql, funkcja dzięki której uczeń mógł dopisać się do kursu.
+              </p>	
+      
+              <br>
+              
+              <div class="sourceCode">
+                <pre>
+      DELIMITER $$
+      DROP PROCEDURE IF EXISTS joinCourse$$
+          CREATE PROCEDURE joinCourse (
+                  IN id_kursu INT,
+                  IN id_ucznia INt)
+          BEGIN
+            SET @result = CONCAT("INSERT INTO Zapisz_Kurs VALUES ('",id_kursu,"', '",id_ucznia,"');");
+            PREPARE stmt FROM @result;
+            EXECUTE stmt;
+            DEALLOCATE PREPARE stmt;
+      END $$
+      DELIMITER ;
+                </pre>
+              </div>			
+            </article>
       </main>
     <footer>
         <p class="contact">
@@ -27,7 +59,17 @@
             E-mail: danieldr1212(at)gmail.com 
             Github: <a href="https://github.com/Danieldrapala"title="https://github.com/Danieldrapala"hreflang="pl">Danieldrapala</a>
         </p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Poprawny CSS!" />
+                </a>
+            </p>
+                  
     </footer>
+    <script type= "text/javascript" src=script.js></script>
+
 </body>
 
 

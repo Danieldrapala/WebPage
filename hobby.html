@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <link rel="stylesheet"  href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset= utf-8>        
@@ -11,19 +12,24 @@
 <body> 
         
       <header>
-        <nav class="naviBar">
-          <a href="index.html ">O Mnie</a>
-          <a href="maths.html"> O Technologiach</a>
-          <a class="glowna" href="hobby.html">  Zainteresowania</a>
-          <a href="projects.html"> Moje Projekty </a>
-        </nav>
+          <nav class="naviBar" id="nav">
+              <a  href="index.html ">Home</a>
+              <div id="links">
+              <a href="maths.html"> O Technologiach</a>
+              <a class="glowna" href="hobby.html">  Zainteresowania</a>
+              <a href="projects.html"> Moje Projekty </a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick= "myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
       </header>
       <main class="projects"> 
         <section >
           <p class="tytul"> Tenis ziemny</p>
           <article class="flex"> 
             <p class="project">Od dziecka gram w tenisa, w wieku 14 lat spróbowałem się w turniejach zawodowych, lecz szybko zdałem sobie sprawę, że jest to dla mnie bardziej relaksacja niż rywalizacja </p>
-          <img class ="logo"src=tenis.jpg height="40%" width="40%">
+          <img class ="logo"src=pictures/tenis.jpg height="40%" width="40%">
           </article>   
         </section>
         <div class="line"></div>
@@ -33,7 +39,7 @@
               <p class="project">Podczas wyboru studiów, oprócz informatyki, którą ostatecznie wybrałem zastanawiałem się nad lotnictwem, poniewaz
                 samoloty to maszyny, które mnie zadziwiają i fascynują. Na zdjęciu, mój ulubiony z samolotów typu myśliwce, MiG-25 Foxbat.
               </p>
-            <img class ="logo"src=mig25.jpeg height="40%" width="40%">
+            <img class ="logo"src=pictures/mig25.jpeg height="40%" width="40%">
             </article>   
           </section>
         
@@ -45,7 +51,17 @@
             E-mail: danieldr1212(at)gmail.com 
             Github: <a href="https://github.com/Danieldrapala"title="https://github.com/Danieldrapala"hreflang="pl">Danieldrapala</a>
         </p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Poprawny CSS!" />
+                </a>
+            </p>
+                  
     </footer>
+    <script type= "text/javascript" src=script.js></script>
+
 </body>
 
 

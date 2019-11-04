@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <link rel="stylesheet"  href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset= utf-8>        
@@ -17,8 +18,48 @@
           <a href="project2.html">  Poprzedni Projekt</a>
         </nav>
       </header>
-      <main>
-        
+      <main class="projects">
+          <article class="flex">
+              <a class="tytul" href="https://github.com/Danieldrapala/Wsp-bie-neProgramowanie" target="_blank"><h2> Gra Chinese Chekers</h2></a>
+              <img class="logo" src="pictures/screen.png" alt=" simulation">
+              
+          </article>
+              <p class="project">
+                Projekt realizowany na uczelnie. wielowatkowa aplikacja symulujaca prace przedsiebiorstwa. Wątki to ludzie, przedmioty to liczby, praca to to działania na liczbach, a produkt sprzedawany w magazynie to wyniki działań.
+                Ponizej znajduja sie wszyscy wartownicy strzegacy kazdego watka.
+              </p>
+              
+              <div class="sourceCode">
+                <pre>
+      func getJobRead(guard bool, ch chan *readJob) chan *readJob {
+      if !guard {
+        return nil
+      }
+      return ch
+    }
+
+    func getJobwrite(guard bool, ch chan *writeJob) chan *writeJob {
+      if !guard {
+        return nil
+      }
+      return ch
+    }
+
+    func getItem(guard bool, ch chan *readWare) chan *readWare {
+      if !guard {
+        return nil
+      }
+      return ch
+    }
+
+    func addItem(guard bool, ch chan *writeWare) chan *writeWare {
+      if !guard {
+        return nil
+      }
+      return ch
+    }
+                </pre>
+              </div>			
       </main>
     <footer>
         <p class="contact">
@@ -27,7 +68,17 @@
             E-mail: danieldr1212(at)gmail.com 
             Github: <a href="https://github.com/Danieldrapala"title="https://github.com/Danieldrapala"hreflang="pl">Danieldrapala</a>
         </p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Poprawny CSS!" />
+                </a>
+            </p>
+                  
     </footer>
+    <script type= "text/javascript" src=script.js></script>
+
 </body>
 
 

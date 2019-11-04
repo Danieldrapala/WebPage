@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
     <link rel="stylesheet"  href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset= utf-8>        
@@ -11,22 +12,27 @@
 <body> 
         
       <header>
-        <nav class="naviBar">
-          <a href="index.html ">O Mnie</a>
-          <a class="glowna"href="maths.html"> O Technologiach</a>
-          <a href="hobby.html">  Zainteresowania</a>
-          <a href="projects.html"> Moje Projekty </a>
-        </nav>
+          <nav class="naviBar" id="nav">
+              <a  href="index.html ">Home</a>
+              <div id="links">
+              <a class="glowna" href="maths.html"> O Technologiach</a>
+              <a  href="hobby.html">  Zainteresowania</a>
+              <a  href="projects.html"> Moje Projekty </a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick= "myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
       </header>
       <main class="projects"> 
           <p class="tytul"> Matematyka i nowoczesne technologie</p>
 
-        <h1 class="hobb"> Ponizej zebrałem nowoczesne technologie związane z programowaniem, jak równiez ciekawe zagadnienia matematyczne, które zawsze mnie fascynowały </h1>
+        <h2 > Ponizej zebrałem nowoczesne technologie związane z programowaniem, jak równiez ciekawe zagadnienia matematyczne, które zawsze mnie fascynowały </h2>
           <section >
             <p class="tytul"> Python 3</p>
             <article class="flex"> 
               <p class="hobb">Obecnie uczę się programować w pythonie. Jest to rozbudowany język wysokiego poziomu, dzięki rozbudowanej bazie bibliotek standdardowych uzywany jest do wszystkiego</p>
-            <img class ="logo"src=pytonik.png height="40%" width="40%">
+            <img class ="logo"src=pictures/pytonik.png height="40%" width="40%">
             </article>   
           </section>
           <div class="line"></div>
@@ -35,7 +41,7 @@
               <article class="flex"> 
                 <p class="hobb">Jest to ciekawy zabieg słuzacy do znalezienia liczb pierwszych. Polega na wykreślaniu kolejnych wielokrotności liczb pierwszych, przez co na końcu neskreślone zostają jedynie liczby pierwsze.
                 </p>
-              <img src=erasto.png height="40%" width="40%">
+              <img src=pictures/sito.png >
               </article>   
             </section>
             
@@ -47,7 +53,17 @@
             E-mail: danieldr1212(at)gmail.com 
             Github: <a href="https://github.com/Danieldrapala"title="https://github.com/Danieldrapala"hreflang="pl">Danieldrapala</a>
         </p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Poprawny CSS!" />
+                </a>
+            </p>
+                  
     </footer>
+    <script type= "text/javascript" src=script.js></script>
+
 </body>
 
 
